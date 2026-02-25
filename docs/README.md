@@ -1,7 +1,29 @@
+## Contextualização
+* A Pesquisa Nacional de Saúde (PNS), realizada pelo IBGE em parceria com o Ministério da Saúde, é o mais completo inquérito domiciliar do Brasil, com edições em 2013 e 2019. Seu propósito é investigar as condições de vida e saúde da população, servindo de base para a formulação de políticas públicas.
+* Dentro do ambito da saúde é questionado desde alimentação a exeriência de atendimentos do setor da saúde. O objetivo geral deste projeto é analisar e comparar padrões de vida, hábitos alimentares e experiências no sistema de saúde entre indivíduos diagnosticados com Asma e indivíduos sem doenças crônicas, utilizando a base de dados PNS 2019, a fim de identificar determinantes de saúde e propor pontos de melhoria no manejo da condição.
 ## Escolha dos Atributos
 * A seguir estão os atributos escolhidos e suas motivações:
     * C6. Gênero - Escolhido devido a importância de distinguir o entrevistado entre Homen ou Mulher.
     * C8. - Idade - Filtro para a faixa etária do projeto (30-59).
+    * D9a. Qual foi o curso mais elevado que ___frequentou? - escolaridade, importante fator socioeconomico.
+    * E16. - Fator de insegurança alimentar (socioecônomico)
+        * (Se E14a = 1 a 4): Qual era o rendimento bruto mensal que ___recebia normalmente nesse trabalho?
+        * (Se E14a = 5 ou 6): Qual era a retirada mensal que ___ fazia normalmente nesse trabalho?
+    * E18. Qual era o rendimento bruto mensal ou retirada que___ fazia normalmente nesse(s) outro(s) trabalho(s)? - Complemento da renda.
+    * F1a. Em julho (mês da pesquisa), ___ recebia normalmente rendimento de  aposentadoria ou pensão de instituto de previdência federal (INSS), estadual,  municipal ou do governo federal, estadual, municipal? - Complemento da renda.
+        * 1.  Sim       (R$ ____________________) ou Faixa
+    * F7a. Em julho (mês da pesquisa), ___ recebia normalmente rendimento de  pensão alimentícia, doação ou mesada em dinheiro de pessoa que não morava no domicílio? - Complemento da renda.
+        * 1.  Sim       (R$ ____________________) ou Faixa
+    * F8a. Em julho (mês da pesquisa), ___ recebia normalmente rendimento de aluguel ou arrendamento? - Complemento da renda.
+        * 1.  Sim       (R$ ____________________) ou Faixa
+    * F10a. Em julho (mês da pesquisa), ___ recebia normalmente rendimento do  seguro-desemprego ou seguro defeso? - Complemento da renda.
+        * 1.  Sim       (R$ ____________________) ou Faixa
+    * F11a. Em julho (mês da pesquisa) ,___ recebia normalmente rendimento do Benefício Assistencial de Prestação Continuada BPC-LOAS? - Complemento da renda.
+        * 1.  Sim       (R$ ____________________) ou Faixa
+    * F12a. Em julho (mês da pesquisa), ___ recebia normalmente rendimento Bolsa Família? - Complemento da renda.
+        * 1.  Sim       (R$ ____________________) ou Faixa
+    * F13a. Em julho (mês da pesquisa), ___ recebia normalmente rendimento em dinheiro de outros programas sociais do governo? - Complemento da renda.
+        * 1.  Sim       (R$ ____________________) ou Faixa
     * M10a. - Nos últimos 30 dias, alguém fumou no mesmo ambiente fechado onde o(a) Sr(a) trabalha(va)(todos os trabalhos)? - Verificação de tabagismo passivo.
     * P1a - O(a) Sr(a) sabe seu peso?
         * 1. Sim, qual? - Necessário para o calculo do IMC, o qual verifica possíveis casos de obesidade.
@@ -23,11 +45,9 @@
     * P52. - E no passado, o(a) Sr(a) fumou algum produto do tabaco? - P050 (Ex fumante) - Verificação de ex-fumantes.
     * P68. - Com que frequência alguém fuma dentro do seu domicílio? - Verificação de tabagismo passivo.
     * Q74. - Algum médico já lhe deu o diagnóstico de asma (ou bronquite asmática)? - Necessária para distinguir pessoas asmáticas de não asmáticas.
-    * AA24. Nos últimos três anos, de agosto de 2016 até hoje, você teve algum trabalho no qual foi exposto(a) a:
-        * a. - Poeira, fumaça, cheiro forte, veneno ou produto químico? - Verificação das condições de trabalho, todos estes elementos podem ser extramamente perigosos para asmáticos servindo como gatilhos para inflamões pulmonares.
-        * c. - Local de trabalho muito frio? - Verificação das condições de trabalho
     * Altura - Primeira medida  e Altura – Segunda medida --> Caso haja usadas no lugar das medidas do modulo P.
     * Peso – Primeira medida e Peso – Segunda medida --> Caso haja usadas no lugar das medidas do modulo P.
+    * VDF003 - Rendimento domiciliar per capita - importante fator socioeconomico.
 ## Agrupamentos e Transformações
 
 ### **IMC - 1° (2 atributos)**
@@ -81,6 +101,9 @@ $$IMC = \frac{Peso}{Altura \times Altura}$$
 - AA24:
     - a.  - Entrevistado esteve contato com substancias que podem adentrar facilmente no seu sistema respirátorio causando reações , 1 sim , 2 não
     - c. - Entrevistado esteve contato com substancias que podem adentrar facilmente no seu sistema respirátorio causando reações , 1 sim , 2 não
+
+### **Fatores Socioeconomicos**
+* Fatores socioeconomicos tem uma relação direta com a insegurança alimentar, sendo uma relação proporcional, logo quanto pior a condição socioeconomica mais insegurança alimentar o mesmo para o contrário.
 
 ### **Faixa Etária - 6° (1 atributo)**
 

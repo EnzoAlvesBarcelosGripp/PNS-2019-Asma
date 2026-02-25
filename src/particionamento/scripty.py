@@ -1,9 +1,17 @@
 import pandas as pd
-df = pd.read_csv(r"C:\Users\Enzo Gripp\Desktop\Faculdade\Mineração de Dados - PNS\data\raw csv\pns2019.csv")
-
+df = pd.read_csv(r"C:\Users\Enzo Gripp\Desktop\Faculdade\Mineração de Dados - PNS\data\Csv\pns2019.csv")
 variaveis = {
     'C006' : 'Sexo',
     'C008':'Idade',
+    'D00901':'Escolaridade',
+    'E01601':'Exato Renda Trabalho0',
+    'E01603':'Exato Renda Trabalho1',
+    'E01801':'Exato Renda Trabalho2',
+    'E01803':'Exato Renda Trabalho3',
+    'F001021':'Exato Renda Trabalho4',
+    'F007021':'Exato Renda Trabalho5',
+    'F008021':'Exato Renda Trabalho6',
+    'VDF00102':'Exato Renda Trabalho7',
     'M01001':'Fumo passivo no trabalho',
     'P00103':'Peso (automedido)',
     'P00403':'Altura (automedida)',
@@ -27,6 +35,7 @@ variaveis = {
     'W00202':'Altura - Segunda medida',
     'W00101':'Peso - Primeira medida',
     'W00102':'Peso - Segunda medida',
+    'VDF003':'Rendimento domiciliar per capita',
     #doenças
     'Q00201': 'Doenca 1',
     'Q03001': 'Doenca 2',
@@ -66,7 +75,7 @@ df_Asmaticos = df_Asmaticos.drop(columns=doencas_para_apagar)
 
 df_final = pd.concat([df_bem,df_Asmaticos],ignore_index=True)
 
-path = r"C:\Users\Enzo Gripp\Desktop\Faculdade\Mineração de Dados - PNS\data\raw csv\pns2019_filtrado.csv"
+path = r"C:\Users\Enzo Gripp\Desktop\Faculdade\Mineração de Dados - PNS\data\Csv\pns2019_filtrado.csv"
 df_final.to_csv(path, index=False, encoding='utf-8-sig')
 
 print(df_final['Asmatico'].value_counts())
