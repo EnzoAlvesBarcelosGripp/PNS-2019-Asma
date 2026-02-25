@@ -6,29 +6,6 @@
     * C6. Gênero - Escolhido devido a importância de distinguir o entrevistado entre Homen ou Mulher.
     * C8. - Idade - Filtro para a faixa etária do projeto (30-59).
     * D9a. Qual foi o curso mais elevado que ___frequentou? - escolaridade, importante fator socioeconomico.
-    * E16. - Fator de insegurança alimentar (socioecônomico)
-        * (Se E14a = 1 a 4): Qual era o rendimento bruto mensal que ___recebia normalmente nesse trabalho?
-        * (Se E14a = 5 ou 6): Qual era a retirada mensal que ___ fazia normalmente nesse trabalho?
-    * E18. Qual era o rendimento bruto mensal ou retirada que___ fazia normalmente nesse(s) outro(s) trabalho(s)? - Complemento da renda.
-    * F1a. Em julho (mês da pesquisa), ___ recebia normalmente rendimento de  aposentadoria ou pensão de instituto de previdência federal (INSS), estadual,  municipal ou do governo federal, estadual, municipal? - Complemento da renda.
-        * 1.  Sim       (R$ ____________________) ou Faixa
-    * F7a. Em julho (mês da pesquisa), ___ recebia normalmente rendimento de  pensão alimentícia, doação ou mesada em dinheiro de pessoa que não morava no domicílio? - Complemento da renda.
-        * 1.  Sim       (R$ ____________________) ou Faixa
-    * F8a. Em julho (mês da pesquisa), ___ recebia normalmente rendimento de aluguel ou arrendamento? - Complemento da renda.
-        * 1.  Sim       (R$ ____________________) ou Faixa
-    * F10a. Em julho (mês da pesquisa), ___ recebia normalmente rendimento do  seguro-desemprego ou seguro defeso? - Complemento da renda.
-        * 1.  Sim       (R$ ____________________) ou Faixa
-    * F11a. Em julho (mês da pesquisa) ,___ recebia normalmente rendimento do Benefício Assistencial de Prestação Continuada BPC-LOAS? - Complemento da renda.
-        * 1.  Sim       (R$ ____________________) ou Faixa
-    * F12a. Em julho (mês da pesquisa), ___ recebia normalmente rendimento Bolsa Família? - Complemento da renda.
-        * 1.  Sim       (R$ ____________________) ou Faixa
-    * F13a. Em julho (mês da pesquisa), ___ recebia normalmente rendimento em dinheiro de outros programas sociais do governo? - Complemento da renda.
-        * 1.  Sim       (R$ ____________________) ou Faixa
-    * M10a. - Nos últimos 30 dias, alguém fumou no mesmo ambiente fechado onde o(a) Sr(a) trabalha(va)(todos os trabalhos)? - Verificação de tabagismo passivo.
-    * P1a - O(a) Sr(a) sabe seu peso?
-        * 1. Sim, qual? - Necessário para o calculo do IMC, o qual verifica possíveis casos de obesidade.
-    * P4a. - O(a) Sr(a) sabe sua altura?
-        * 1. Sim, qual? - Necessário para o calculo do IMC, o qual verifica possíveis casos de obesidade.
     * P10a. - Em geral, o(a) Sr(a) costuma comer esse tipo de verdura ou legume: - Verificar hábito alimentícios, as verduras e legumes geralmente comtém as vitaminas C,D,E importantes para o controle da asma.
     * P9a. - Em quantos dias da semana, o(a) Sr(a) costuma comer pelo menos um tipo de verdura ou legume (sem contar batata, mandioca, cará ou inhame) como alface, tomate, couve, cenoura, chuchu, berinjela, abobrinha? - Verificar a consistência do hábito.
     * P15. - Em quantos dias da semana, o(a) Sr(a) costuma comer peixe? - Verificar consistência de hábito alimentício, peixes são ricos em Omêga-3, que é um nutriente anti-flamatório
@@ -102,8 +79,10 @@ $$IMC = \frac{Peso}{Altura \times Altura}$$
     - a.  - Entrevistado esteve contato com substancias que podem adentrar facilmente no seu sistema respirátorio causando reações , 1 sim , 2 não
     - c. - Entrevistado esteve contato com substancias que podem adentrar facilmente no seu sistema respirátorio causando reações , 1 sim , 2 não
 
-### **Fatores Socioeconomicos**
+### **Fatores Socioeconomicos - 7° (2 atributos)**
 * Fatores socioeconomicos tem uma relação direta com a insegurança alimentar, sendo uma relação proporcional, logo quanto pior a condição socioeconomica mais insegurança alimentar o mesmo para o contrário.
+- VDF003 - Rendimento domiciliar per capita 
+- D9a. Qual foi o curso mais elevado que ___frequentou?
 
 ### **Faixa Etária - 6° (1 atributo)**
 
