@@ -5,7 +5,7 @@ variaveis = {
     'C008':'Idade',
     'D00901':'Escolaridade',
     'M01001':'Fumo passivo no trabalho',
-    'P00103':'Peso (automedido)',
+    'P00104':'Peso (automedido)',
     'P00403':'Altura (automedida)',
     'P00901':'Consumo em dias vegetal/legume',
     'P01001':'Consumo por dia vegetal/legume',
@@ -52,11 +52,11 @@ colunas_doencas = [
 df_filtrado = df[list(variaveis.keys())].rename(columns=variaveis).copy()
 df_bem = df_filtrado[
     (df_filtrado['Idade'] >= 30) & 
-    (df_filtrado['Idade'] < 60) & 
+    (df_filtrado['Idade'] <= 60) & 
     (df_filtrado[colunas_doencas] == 2).all(axis=1)
 ].copy()
 
-df_Asmaticos= df_filtrado.query("Asmatico == 1 and Idade >= 30 and Idade < 60").copy()
+df_Asmaticos= df_filtrado.query("Asmatico == 1 and Idade >= 30 and Idade <= 60").copy()
 
 print(len(df_Asmaticos))
 print(len(df_bem))
