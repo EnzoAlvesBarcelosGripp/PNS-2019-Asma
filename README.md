@@ -24,3 +24,6 @@
     * Construção dos dicionário de dados.
     * 
 * Obs: Variáveis que representam consequências diretas do diagnóstico de diabetes (por exemplo, orientações médicas recebidas após o diagnóstico) não são utilizadas na construção de modelos preditivos, de modo a evitar o vazamento de informação (target leakage). São priorizadas variáveis que representam exposição alimentar, comportamento e condições físicas dos indivíduos.
+
+
+* **LEMBRETE:Peso do morador selecionado com calibração** perguntar professor se tem problema usar esse dado para o ML, caso tenha, perguntar se ele pode ser usado dps dos resultados para fazer o calculo da representatividade do BRasil.

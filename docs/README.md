@@ -2,29 +2,52 @@
 * A Pesquisa Nacional de Saúde (PNS), realizada pelo IBGE em parceria com o Ministério da Saúde, é o mais completo inquérito domiciliar do Brasil, com edições em 2013 e 2019. Seu propósito é investigar as condições de vida e saúde da população, servindo de base para a formulação de políticas públicas.
 * Dentro do ambito da saúde é questionado desde alimentação a exeriência de atendimentos do setor da saúde. O objetivo geral deste projeto é analisar e comparar padrões de vida, hábitos alimentares e experiências no sistema de saúde entre indivíduos diagnosticados com Asma e indivíduos sem doenças crônicas, utilizando a base de dados PNS 2019, a fim de identificar determinantes de saúde e propor pontos de melhoria no manejo da condição.
 ## Escolha dos Atributos
-* A seguir estão os atributos escolhidos e suas motivações:
-    * C6. Gênero - Escolhido devido a importância de distinguir o entrevistado entre Homen ou Mulher.
-    * C8. - Idade - Filtro para a faixa etária do projeto (30-59).
-    * D9a. Qual foi o curso mais elevado que ___frequentou? - escolaridade, importante fator socioeconomico.
-    * P10a. - Em geral, o(a) Sr(a) costuma comer esse tipo de verdura ou legume: - Verificar hábito alimentícios, as verduras e legumes geralmente comtém as vitaminas C,D,E importantes para o controle da asma.
-    * P9a. - Em quantos dias da semana, o(a) Sr(a) costuma comer pelo menos um tipo de verdura ou legume (sem contar batata, mandioca, cará ou inhame) como alface, tomate, couve, cenoura, chuchu, berinjela, abobrinha? - Verificar a consistência do hábito.
-    * P15. - Em quantos dias da semana, o(a) Sr(a) costuma comer peixe? - Verificar consistência de hábito alimentício, peixes são ricos em Omêga-3, que é um nutriente anti-flamatório
-    * P18. - Em quantos dias da semana o(a) Sr(a) costuma comer frutas? - Verificar consistência de hábito alimentícios, as frutas geralmente comtém as vitaminas C,D,E importantes para o controle da asma.
-    * P19. - Em geral, quantas vezes por dia o(a) Sr(a) come frutas? - Verificar consistência de hábito alimentícios
-    * P20b. Em quantos dia da semana o(a) Sr(a) costuma tomar refrigerante? - Verificar consistência de hábito alimentício, o alto teor de açúcar, frutose e conservantes promovem inflamações em vias aéreas.
-    * P21b. Que tipo de refrigerante o(a0 Sr(a) costuma tomar? - Verificação de possível agravante, refrigerantes Diet/ligth/zero são considerados ruins para a saúde de alguém asmático, mas não tanto qunato refrigerantes normais.
-    * P25a. - Em quantos dia da semana o(a) Sr(a) costuma comer alimentos doces como biscoito/bolacha recheado, chocolate, gelatina, balas e outros? - Verificar consistência de hábito alimentício, o alto teor de açúcar promove inflamações em vias aéreas.
-    * P26b. - Em quantos dias da semana o(a) Sr(a) costuma substituir a refeição do almoço por lanches rápidos como sanduíches, salgados, pizzas, cachorro quente etc.? - Verificar consistência de hábito alimentício, alimentos ultraprocessados contém gorduras saturadas,trans e alto teor de sódio promovendo processos inflamatórios direto dos brônquios e nos pulmões.
-    * P34. - Nos últimos doze meses, o(a) Sr(a) praticou algum tipo de exercício físico ou esporte? - Verificação de rotina de saúde, a rotina de exercícios fisícos evitam a obesidade, que é um agravante da asma.
-    * P35. - Quantos dias por semana o(a) Sr(a) costuma (costumava) praticar exercício físico ou esporte? - Verificação de consistência de rotina de saúde
-    * P36. - Qual o exercício físico ou esporte que o(a) Sr(a) pratica(praticava) com mais frequência? - Verificação de exercícios aeróbicos altamente recomendados para asmáticos (Caminhada,Caminhada em esteira, Corrida em esteira,Natação,Hidroginástica  Bicicleta ou bicicleta ergométrica).
-    * P50. - Atualmente, o(a) Sr(a) fuma algum produto do tabaco? - Verificação de tabagismo ativo, a inalação de tabaco é extremamente perigoso para um asmático, já que fácilmente pode gerar irritações ou piorar a eficiência pulmonar.
-    * P52. - E no passado, o(a) Sr(a) fumou algum produto do tabaco? - P050 (Ex fumante) - Verificação de ex-fumantes.
-    * P68. - Com que frequência alguém fuma dentro do seu domicílio? - Verificação de tabagismo passivo.
-    * Q74. - Algum médico já lhe deu o diagnóstico de asma (ou bronquite asmática)? - Necessária para distinguir pessoas asmáticas de não asmáticas.
-    * Altura - Primeira medida  e Altura – Segunda medida --> Caso haja usadas no lugar das medidas do modulo P.
-    * Peso – Primeira medida e Peso – Segunda medida --> Caso haja usadas no lugar das medidas do modulo P.
-    * VDF003 - Rendimento domiciliar per capita - importante fator socioeconomico.
+* V0001 - Unidade da Federação (primeiro digito equivale a Região)
+* V0026 - Tipo de situação censitária (Morador urbano ou rural)
+* C6. Gênero 
+* C8. - Idade 
+* M011071 - No(s) seu(s) trabalho(s), o(a) Sr(a) está exposto(a) a algum destes fatores que podem afetar a sua saúde Exposição à poeira mineral (pó de mármore, de areia, de brita, de vidro (sílica), de amianto (asbesto), de ferro ou aço)
+* P00104 - Peso - Final (em kg)
+* P00404 - Altura - Final (em cm)
+* P10a. - Em geral, o(a) Sr(a) costuma comer esse tipo de verdura ou legume: 
+* P9a. - Em quantos dias da semana, o(a) Sr(a) costuma comer pelo menos um tipo de verdura ou legume (sem contar batata, mandioca, cará ou inhame) como alface, tomate, couve, cenoura, chuchu, berinjela, abobrinha?
+* P15. - Em quantos dias da semana, o(a) Sr(a) costuma comer peixe?
+* P02001 - Em quantos dias da semana o(a) Sr(a) costuma tomar suco de caixinha/lata ou refresco em pó ? 
+* P02101 - Que tipo de suco de caixinha/lata ou refresco em pó o(a) Sr(a) costuma tomar? (Ler as opções de resposta) 
+* P01601 - Em quantos dias da semana o(a) Sr(a) costuma tomar suco de fruta natural (incluída a polpa de fruta congelada)? 
+* P18. - Em quantos dias da semana o(a) Sr(a) costuma comer frutas?
+* P19. - Em geral, quantas vezes por dia o(a) Sr(a) come frutas?
+* P20b. Em quantos dia da semana o(a) Sr(a) costuma tomar refrigerante?
+* P21b. Que tipo de refrigerante o(a) Sr(a) costuma tomar?
+* P25a. - Em quantos dia da semana o(a) Sr(a) costuma comer alimentos doces como biscoito/bolacha recheado, chocolate, gelatina, balas e outros?
+* P26b. - Em quantos dias da semana o(a) Sr(a) costuma substituir a refeição do almoço por lanches rápidos como sanduíches, salgados, pizzas, cachorro quente etc.?
+* P027 - Com que frequência o(a) Sr(a) costuma consumir alguma bebida alcoólica?
+* P02801 - Quantos dias por semana o(a) Sr(a) costuma consumir alguma bebida alcoólica? 
+*  P029 - Em geral, no dia que o(a) Sr(a) bebe, quantas doses de bebida alcoólica o(a) Sr(a) consome? 
+* P34. - Nos últimos doze meses, o(a) Sr(a) praticou algum tipo de exercício físico ou esporte?
+* P35. - Quantos dias por semana o(a) Sr(a) costuma (costumava) praticar exercício físico ou esporte?
+* P36. - Qual o exercício físico ou esporte que o(a) Sr(a) pratica(praticava) com mais frequência?
+* P03702 - Em geral, no dia que o(a) Sr(a) pratica (praticava) exercício ou esporte, quanto tempo em minutos dura essa atividade?Minutos
+* P50. - Atualmente, o(a) Sr(a) fuma algum produto do tabaco?
+* P52. - E no passado, o(a) Sr(a) fumou algum produto do tabaco?
+* P05401 - Em média, quanto fuma por dia ou por semana Cigarros industrializados
+* P05404 - Em média, quanto fuma por dia ou por semana Cigarros de palha ou enrolados a mão? 
+* P05407 - Em média, quanto fuma por dia ou por semana Cigarros de cravo ou de Bali? 
+*  P05410 - Em média, quanto fuma por dia ou por semana Cachimbos (considere cachimbos cheios)? 
+* P05413 - Em média, quanto fuma por dia ou por semana Charutos ou cigarrilhas?
+* P05416 - Em média, quanto fuma por dia ou por semana Narguilé (sessões)? 
+* P05419 - Em média, quanto fuma por dia ou por semana Outro
+* P06701 - O(a) Sr(a) usa aparelhos eletrônicos com nicotina líquida ou folha de tabaco picado (cigarro eletrônico, narguilé eletrônico, cigarro aquecido ou outro dispositivo eletrônico para fumar ou vaporizar)? - (1, diaramente ; 2 menos que diaramente ; 3 Não, mas já usei)
+* P68. - Com que frequência alguém fuma dentro do seu domicílio?
+* Q74. - Algum médico já lhe deu o diagnóstico de asma (ou bronquite asmática)?
+* W00201 - Altura - Primeira medida
+* W00202- Altura – Segunda medida
+* W00101 - Peso – Primeira medida
+* W00102 - Peso – Segunda medida
+* VDF004-  Faixa rendimento domiciliar per capita
+* VDD004A - Nível de instrução mais elevado alcançado (pessoas de 5 anos ou mais de idade) padronizado para o Ensino Fundamental -  SISTEMA DE 9 ANOS
+
+
 ## Agrupamentos e Transformações
 
 ### **IMC - 1° (2 atributos)**
@@ -95,3 +118,6 @@ $$IMC = \frac{Peso}{Altura \times Altura}$$
 ### **Asmático - 8° (1 atributo)**
 
 - Seguir o questionário
+
+
+2153

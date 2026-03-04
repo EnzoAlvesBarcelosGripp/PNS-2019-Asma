@@ -26,7 +26,7 @@ variaveis = {
     'W00201':'Altura - Primeira medida',
     'W00202':'Altura - Segunda medida',
     'W00101':'Peso - Primeira medida',
-    'W00102':'Peso - Segunda medida',
+    'W00102':'Peso - Segunda medida',   
     'VDF003':'Rendimento domiciliar per capita',
     #doenças
     'Q00201': 'Doenca 1',
@@ -40,13 +40,15 @@ variaveis = {
     'Q11006': 'Doenca 9',
     'Q11604': 'Doenca 10',
     'Q120': 'Doenca 11',
-    'Q128': 'Doenca 12'
+    'Q124': 'Doenca 12',
+    'Q128': 'Doenca 13'
 }
 
 colunas_doencas = [
     'Doenca 1', 'Doenca 2', 'Doenca 3', 'Doenca 4', 'Asmatico','Doenca 5', 
     'Doenca 6', 'Doenca 7', 'Doenca 8', 'Doenca 9', 'Doenca 10', 
-    'Doenca 11', 'Doenca 12', 
+    'Doenca 11', 'Doenca 12', 'Doenca 13'
+    ''
 ]
 
 df_filtrado = df[list(variaveis.keys())].rename(columns=variaveis).copy()
